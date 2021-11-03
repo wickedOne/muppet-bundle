@@ -5,8 +5,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd"
 >
     <services>
-        <prototype namespace="WickedOne\Muppet\Method\" resource="../../../vendor/wickedone/muppet/src/Method"/>
-        <prototype namespace="WickedOne\Muppet\Property\" resource="../../../vendor/wickedone/muppet/src/Property"/>
+        <prototype namespace="WickedOne\Muppet\Method\" resource="%kernel.project_dir%/vendor/wickedone/muppet/src/Method"/>
+        <prototype namespace="WickedOne\Muppet\Property\" resource="%kernel.project_dir%/vendor/wickedone/muppet/src/Property"/>
 
         <instanceof id="WickedOne\Muppet\Contract\MethodInterface">
             <tag name="muppet.method"/>
