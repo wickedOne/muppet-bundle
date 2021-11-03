@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services">
+
+    <config xmlns="http://example.org/schema/dic/wicked_one_muppet_bundle">
+        <base_dir>Foo/Bar</base_dir>
+        <test_dir>Baz/Qux</test_dir>
+        <fragment>Foo</fragment>
+        <fragment>Bar</fragment>
+        <fragment>Baz</fragment>
+        <author><![CDATA[foo <bar@baz.qux>]]></author>
+    </config>
+
+</container>

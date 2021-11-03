@@ -1,0 +1,53 @@
+{
+    "name": "wickedone/muppet-bundle",
+    "description": "symfony bundle for muppet test generator",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WickedOne\\MuppetBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WickedOne\\MuppetBundle\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wickedOne",
+            "email": "wicliff.wolda@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4 || ^8.0",
+        "symfony/config": "5.4.x-dev",
+        "symfony/console": "5.4.x-dev",
+        "symfony/framework-bundle": "5.4.x-dev",
+        "wickedone/muppet": "dev-master",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.3"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "infection/infection": "dev-master",
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "escapestudios/symfony2-coding-standard": "3.x-dev",
+        "phpstan/phpstan": "1.0.x-dev",
+        "phpstan/phpstan-deprecation-rules": "1.0.x-dev",
+        "phpstan/phpstan-php-parser": "1.0.x-dev",
+        "phpstan/phpstan-phpunit": "1.0.x-dev",
+        "phpstan/phpstan-strict-rules": "1.0.x-dev",
+        "wickedone/phpcs-reporter": "dev-main",
+        "wickedone/phpunit-printer": "^1.0"
+    },
+    "scripts": {
+        "run-phpunit": "vendor/bin/phpunit --testsuite=unit",
+        "run-phpunitc": "XDEBUG_MODE=coverage vendor/bin/phpunit --testsuite=unit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/junit.xml --coverage-html=build/coverage/html/",
+        "run-phpstan": "vendor/bin/phpstan",
+        "run-phpcs": "vendor/bin/phpcs",
+        "run-phpcsf": "vendor/bin/php-cs-fixer fix",
+        "run-infection": ["@run-phpunitc", "vendor/bin/infection --coverage=build/coverage -j$(sysctl -n hw.ncpu) -s -vv"]
+    }
+}
