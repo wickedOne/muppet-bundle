@@ -19,27 +19,27 @@
             "email": "wicliff.wolda@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.4 || ^8.0",
-        "symfony/config": "5.4.x-dev",
-        "symfony/console": "5.4.x-dev",
-        "symfony/framework-bundle": "5.4.x-dev",
+        "symfony/config": "^5.3",
+        "symfony/console": "^5.3",
+        "symfony/framework-bundle": "^5.3",
         "wickedone/muppet": "dev-master",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3"
     }
     ,
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "infection/infection": "dev-master",
-        "friendsofphp/php-cs-fixer": "dev-master",
-        "escapestudios/symfony2-coding-standard": "3.x-dev",
-        "phpstan/phpstan": "1.0.x-dev",
-        "phpstan/phpstan-deprecation-rules": "1.0.x-dev",
-        "phpstan/phpstan-php-parser": "1.0.x-dev",
-        "phpstan/phpstan-phpunit": "1.0.x-dev",
-        "phpstan/phpstan-strict-rules": "1.0.x-dev",
-        "wickedone/phpcs-reporter": "dev-main",
+        "infection/infection": "^0.25.3",
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "escapestudios/symfony2-coding-standard": "^3.0",
+        "phpstan/phpstan": "^1.0",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-php-parser": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpstan/phpstan-strict-rules": "^1.0",
+        "wickedone/phpcs-reporter": "^1.0",
         "wickedone/phpunit-printer": "^1.0"
     },
     "scripts": {
