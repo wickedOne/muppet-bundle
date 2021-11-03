@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3dc30b75399aaa2b6ff70e4896ad9f3b",
+    "content-hash": "954c0ea149d8323fed8c698cd6ff6d4e",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -5129,7 +5129,7 @@
         },
         {
             "name": "wickedone/muppet",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wickedOne/muppet.git",
@@ -5165,7 +5165,6 @@
                 "wickedone/phpcs-reporter": "^1.0",
                 "wickedone/phpunit-printer": "^1.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -5194,7 +5193,7 @@
             ],
             "support": {
                 "issues": "https://github.com/wickedOne/muppet/issues",
-                "source": "https://github.com/wickedOne/muppet/tree/master"
+                "source": "https://github.com/wickedOne/muppet/tree/1.0.1"
             },
             "time": "2021-11-03T14:41:35+00:00"
         }
@@ -7543,7 +7542,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wickedone/muppet": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
