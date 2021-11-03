@@ -32,6 +32,16 @@ use WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetBundleExtension;
 class WickedOneMuppetBundleExtensionTest extends AbstractExtensionTestCase
 {
     /**
+     * {@inheritdoc}
+     */
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->setParameter('kernel.project_dir', __DIR__.'/../../../');
+    }
+
+    /**
      * test load services.
      */
     public function testLoadServices(): void
@@ -64,10 +74,7 @@ class WickedOneMuppetBundleExtensionTest extends AbstractExtensionTestCase
         $this->assertContainerBuilderHasService(Config::class);
 
         $this->assertContainerBuilderHasServiceDefinitionWithArgument(Generator::class, 0, Config::class);
-        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 0, 'foo/bar');
-        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 1, 'baz/qux');
-        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 2, []);
-        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 3, null);
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 0, $this->getMinimalConfiguration());
     }
 
     /**
@@ -86,6 +93,8 @@ class WickedOneMuppetBundleExtensionTest extends AbstractExtensionTestCase
         return [
             'base_dir' => 'foo/bar',
             'test_dir' => 'baz/qux',
+            'fragments' => [],
+            'author' => null,
         ];
     }
 }
