@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+    <services>
+        <prototype namespace="WickedOne\Muppet\Method\" resource="../../../vendor/wickedone/muppet/src/Method"/>
+        <prototype namespace="WickedOne\Muppet\Property\" resource="../../../vendor/wickedone/muppet/src/Property"/>
+
+        <instanceof id="WickedOne\Muppet\Contract\MethodInterface">
+            <tag name="muppet.method"/>
+        </instanceof>
+
+        <instanceof id="WickedOne\Muppet\Contract\PropertyInterface">
+            <tag name="muppet.property"/>
+        </instanceof>
+
+        <service id="WickedOne\Muppet\Generator">
+            <argument/>
+            <argument type="tagged_iterator" tag="muppet.property"/>
+            <argument type="tagged_iterator" tag="muppet.method"/>
+        </service>
+
+        <service id="WickedOne\MuppetBundle\Command\MuppetGenerateCommand">
+            <argument type="service" id="WickedOne\Muppet\Generator"/>
+            <tag name="console.command"/>
+        </service>
+    </services>
+</container>

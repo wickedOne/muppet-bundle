@@ -1,0 +1,8 @@
+wicked_one_muppet_bundle:
+  base_dir: Foo/Bar
+  test_dir: Baz/Qux
+  fragments:
+    - Foo
+    - Bar
+    - Baz
+  author: foo <bar@baz.qux>
