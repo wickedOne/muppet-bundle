@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <container xmlns="http://symfony.com/schema/dic/services">
 
-    <config xmlns="http://example.org/schema/dic/wicked_one_muppet_bundle">
+    <config xmlns="http://example.org/schema/dic/wicked_one_muppet">
         <base_dir>Foo/Bar</base_dir>
         <test_dir>Baz/Qux</test_dir>
     </config>

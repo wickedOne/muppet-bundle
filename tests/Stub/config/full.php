@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-$container->loadFromExtension('wicked_one_muppet_bundle', [
+$container->loadFromExtension('wicked_one_muppet', [
     'base_dir' => 'Foo/Bar',
     'test_dir' => 'Baz/Qux',
     'fragments' => [

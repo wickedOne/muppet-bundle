@@ -16,7 +16,7 @@ use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionConfigurati
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use WickedOne\MuppetBundle\DependencyInjection\Configuration;
-use WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetBundleExtension;
+use WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetExtension;
 
 /**
  * ConfigurationTest.
@@ -90,7 +90,7 @@ class ConfigurationTest extends AbstractExtensionConfigurationTestCase
      */
     protected function getContainerExtension(): ExtensionInterface
     {
-        return new WickedOneMuppetBundleExtension();
+        return new WickedOneMuppetExtension();
     }
 
     /**

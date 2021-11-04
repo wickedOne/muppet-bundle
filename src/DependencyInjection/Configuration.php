@@ -28,7 +28,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('wicked_one_muppet_bundle');
+        $treeBuilder = new TreeBuilder('wicked_one_muppet');
         /** @var ArrayNodeDefinition $rootNode */
         $rootNode = $treeBuilder->getRootNode();
 
