@@ -1,4 +1,4 @@
-wicked_one_muppet_bundle:
+wicked_one_muppet:
   base_dir: Foo/Bar
   test_dir: Baz/Qux
   fragments:

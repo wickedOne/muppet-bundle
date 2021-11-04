@@ -22,19 +22,19 @@ use WickedOne\Muppet\Property\ClassProperty;
 use WickedOne\Muppet\Property\NonNullableProperty;
 use WickedOne\Muppet\Property\ValuesProperty;
 use WickedOne\MuppetBundle\Command\MuppetGenerateCommand;
-use WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetBundleExtension;
+use WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetExtension;
 
 /**
- * WickedOneMuppetBundleExtensionTest.
+ * WickedOneMuppetExtensionTest.
  *
  * @author wicliff <wicliff.wolda@gmail.com>
  */
-class WickedOneMuppetBundleExtensionTest extends AbstractExtensionTestCase
+class WickedOneMuppetExtensionTest extends AbstractExtensionTestCase
 {
     /**
      * {@inheritdoc}
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -78,11 +78,11 @@ class WickedOneMuppetBundleExtensionTest extends AbstractExtensionTestCase
     }
 
     /**
-     * @return \WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetBundleExtension[]
+     * @return \WickedOne\MuppetBundle\DependencyInjection\WickedOneMuppetExtension[]
      */
     protected function getContainerExtensions(): array
     {
-        return [new WickedOneMuppetBundleExtension()];
+        return [new WickedOneMuppetExtension()];
     }
 
     /**

@@ -26,7 +26,7 @@ use WickedOne\Muppet\Generator;
  *
  * @author wicliff <wicliff.wolda@gmail.com>
  */
-class WickedOneMuppetBundleExtension extends Extension
+class WickedOneMuppetExtension extends Extension
 {
     /**
      * @param array<string, string|string[]>                          $configs
