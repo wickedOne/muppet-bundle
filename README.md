@@ -1,7 +1,7 @@
 # muppet-bundle
 symfony bundle for the [muppet generator](https://github.com/wickedOne/muppet)
 
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%wickedOne%2Fmuppet-bundle%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/wickedOne/muppet-bundle/master)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FwickedOne%2Fmuppet-bundle%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/wickedOne/muppet-bundle/master)
 [![codecov](https://codecov.io/gh/wickedOne/muppet-bundle/branch/master/graph/badge.svg)](https://codecov.io/gh/solrphp/solarium-bundle)
 [![PHPStan static analysis](https://github.com/wickedOne/muppet-bundle/actions/workflows/phpstan.yml/badge.svg)](https://github.com/solrphp/solarium-bundle/actions/workflows/phpstan.yml)
 [![coding standards](https://github.com/wickedOne/muppet-bundle/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/solrphp/solarium-bundle/actions/workflows/coding-standards.yml)
