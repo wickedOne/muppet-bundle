@@ -22,7 +22,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4 || ^8.0",
-        "symfony/config": "^5.3",
+        "symfony/config": "^5.4",
         "symfony/console": "^5.3",
         "symfony/framework-bundle": "^5.3",
         "wickedone/muppet": "^1.0.1",
