@@ -24,7 +24,7 @@
         "php": ">=7.4 || ^8.0",
         "symfony/config": "^5.3",
         "symfony/console": "^5.3",
-        "symfony/framework-bundle": "^5.3",
+        "symfony/framework-bundle": "^5.4",
         "wickedone/muppet": "^1.0.1",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3"
     }
