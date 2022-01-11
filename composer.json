@@ -31,7 +31,7 @@
     ,
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "infection/infection": "^0.25.6",
+        "infection/infection": "^0.26.0",
         "friendsofphp/php-cs-fixer": "^3.4",
         "escapestudios/symfony2-coding-standard": "^3.0",
         "phpstan/phpstan": "^1.3",
