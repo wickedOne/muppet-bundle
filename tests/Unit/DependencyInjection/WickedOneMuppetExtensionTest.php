@@ -74,7 +74,10 @@ class WickedOneMuppetExtensionTest extends AbstractExtensionTestCase
         $this->assertContainerBuilderHasService(Config::class);
 
         $this->assertContainerBuilderHasServiceDefinitionWithArgument(Generator::class, 0, Config::class);
-        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 0, $this->getMinimalConfiguration());
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 0, $this->getMinimalConfiguration()['base_dir']);
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 1, $this->getMinimalConfiguration()['test_dir']);
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 2, $this->getMinimalConfiguration()['fragments']);
+        $this->assertContainerBuilderHasServiceDefinitionWithArgument(Config::class, 3, $this->getMinimalConfiguration()['author']);
     }
 
     /**
@@ -86,7 +89,7 @@ class WickedOneMuppetExtensionTest extends AbstractExtensionTestCase
     }
 
     /**
-     * @return string[]
+     * @return array<string, string|array|null>
      */
     protected function getMinimalConfiguration(): array
     {

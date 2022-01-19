@@ -25,7 +25,7 @@
         "symfony/config": "^5.3",
         "symfony/console": "^5.4",
         "symfony/framework-bundle": "^5.4",
-        "wickedone/muppet": "^1.0.1",
+        "wickedone/muppet": "^2.0",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3"
     }
     ,
