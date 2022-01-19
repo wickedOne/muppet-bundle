@@ -56,7 +56,10 @@ class WickedOneMuppetExtension extends Extension
     private function loadMuppetConfig(ContainerBuilder $container, array $config): void
     {
         $definition = new Definition(Config::class, [
-            $config,
+            $config['base_dir'],
+            $config['test_dir'],
+            $config['fragments'],
+            $config['author'],
         ]);
 
         $container->setDefinition(Config::class, $definition);
