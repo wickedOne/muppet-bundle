@@ -2616,16 +2616,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v5.4.2",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "8aad4b69a10c5c51ab54672e78995860f5e447ec"
+                "reference": "b954c9397b226df319c6dfd002636ddaa4d848ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/8aad4b69a10c5c51ab54672e78995860f5e447ec",
-                "reference": "8aad4b69a10c5c51ab54672e78995860f5e447ec",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/b954c9397b226df319c6dfd002636ddaa4d848ef",
+                "reference": "b954c9397b226df319c6dfd002636ddaa4d848ef",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "psr6"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache/tree/v5.4.2"
+                "source": "https://github.com/symfony/cache/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -2709,7 +2709,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-28T17:15:56+00:00"
+            "time": "2022-02-21T15:00:19+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -2970,16 +2970,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v5.4.3",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "974580fd67f14d65b045c11b09eb149cd4b13df5"
+                "reference": "17f31bc13ef2b577d3c652d71af49d000cbd5894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/974580fd67f14d65b045c11b09eb149cd4b13df5",
-                "reference": "974580fd67f14d65b045c11b09eb149cd4b13df5",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/17f31bc13ef2b577d3c652d71af49d000cbd5894",
+                "reference": "17f31bc13ef2b577d3c652d71af49d000cbd5894",
                 "shasum": ""
             },
             "require": {
@@ -2995,7 +2995,7 @@
                 "symfony/config": "<5.3",
                 "symfony/finder": "<4.4",
                 "symfony/proxy-manager-bridge": "<4.4",
-                "symfony/yaml": "<4.4"
+                "symfony/yaml": "<4.4.26"
             },
             "provide": {
                 "psr/container-implementation": "1.0",
@@ -3004,7 +3004,7 @@
             "require-dev": {
                 "symfony/config": "^5.3|^6.0",
                 "symfony/expression-language": "^4.4|^5.0|^6.0",
-                "symfony/yaml": "^4.4|^5.0|^6.0"
+                "symfony/yaml": "^4.4.26|^5.0|^6.0"
             },
             "suggest": {
                 "symfony/config": "",
@@ -3039,7 +3039,7 @@
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v5.4.3"
+                "source": "https://github.com/symfony/dependency-injection/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -3055,7 +3055,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-26T16:28:35+00:00"
+            "time": "2022-02-24T09:30:07+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -7138,16 +7138,16 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v5.4.3",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "395220730edceb6bd745236ccb5c9125c748f779"
+                "reference": "4d04b5c24f3c9a1a168a131f6cbe297155bc0d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/395220730edceb6bd745236ccb5c9125c748f779",
-                "reference": "395220730edceb6bd745236ccb5c9125c748f779",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/4d04b5c24f3c9a1a168a131f6cbe297155bc0d30",
+                "reference": "4d04b5c24f3c9a1a168a131f6cbe297155bc0d30",
                 "shasum": ""
             },
             "require": {
@@ -7180,7 +7180,7 @@
             "description": "Provides a way to profile code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/stopwatch/tree/v5.4.3"
+                "source": "https://github.com/symfony/stopwatch/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -7196,7 +7196,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2022-02-18T16:06:09+00:00"
         },
         {
             "name": "thecodingmachine/safe",
